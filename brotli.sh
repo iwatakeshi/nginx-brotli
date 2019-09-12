@@ -108,7 +108,7 @@ cd /usr/local/src/${USER}
 apt-get source nginx
 sudo apt-get build-dep nginx -y
 
-git clone --recursive https://github.com/eustas/ngx_brotli
+git clone --recursive https://github.com/google/ngx_brotli
 sudo ln -s /usr/local/src/${USER}/ngx_brotli /usr/local/src/ngx_brotli
 sudo chown ${USER}:$USER:$(id -gn $USER) /usr/local/src/ngx_brotli
 cd /usr/local/src/${USER}/nginx-*/
